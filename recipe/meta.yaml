@@ -8,7 +8,7 @@ package:
 
 source:
   url: https://pypi.org/packages/source/{{ name[0] }}/{{ name }}/{{ name }}-{{ version }}.tar.gz
-  sha256: 5645d7286d5f24352d6db3b3336d77a43f6fca8e1491e160163a93c55aafc38c
+  sha256: e9fdaa8efefc65aae784cb63f1133ac3a4e63ea25caf522ddc3735b47407d8f5
 
 build:
   number: 0
@@ -23,7 +23,7 @@ requirements:
     - pip
   run:
     - python >={{ python_min }}
-    - fenics-dolfinx ==0.10.0
+    - fenics-dolfinx==0.11.0
     - python-gmsh
     - mpi4py
     - numpy
